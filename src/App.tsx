@@ -1,5 +1,6 @@
 import React, {FC} from "react";
 import "./App.css";
+import { Person }  from "./components/Person";
 
 const App: FC = () => {
   //TS deff
@@ -15,9 +16,9 @@ const App: FC = () => {
   //   }
   // }
 
-
-
-  return <div className="App"></div>;
+  return <div className="App">
+    <Person name={"Pedro"} age={26} email={`test@test.com`}/>
+  </div>;
 }
 
 export default App;
