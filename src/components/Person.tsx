@@ -1,3 +1,4 @@
+import { type } from "os";
 import { FC, useState, ChangeEvent } from "react";
 
 export enum HairColor {
@@ -15,6 +16,9 @@ interface Props {
 
 export const Person: FC<Props> = (props) => {
   const [country, setCountry] = useState<string | null>(null);
+
+  type NameType = "Pedro" | "Jack";
+  const nameForType: NameType = "Jack";
 
   const onCountryChange = (event: ChangeEvent<HTMLInputElement>) => {
     setCountry(event.target.value);
