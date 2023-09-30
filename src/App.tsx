@@ -1,6 +1,7 @@
 import React, { FC, createContext } from "react";
 import "./App.css";
-import { Person, HairColor } from "./components/Person";
+import { Person } from "./components/Person";
+import { HairColor } from "./components/Enums";
 
 interface AppContextInterface {
   name: string;
