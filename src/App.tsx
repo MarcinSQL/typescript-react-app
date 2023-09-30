@@ -1,6 +1,6 @@
 import React, {FC} from "react";
 import "./App.css";
-import { Person }  from "./components/Person";
+import { Person, HairColor }  from "./components/Person";
 
 const App: FC = () => {
   //TS deff
@@ -17,7 +17,7 @@ const App: FC = () => {
   // }
 
   return <div className="App">
-    <Person name={"Pedro"} age={26} email={`test@test.com`}/>
+    <Person name={"Pedro"} age={26} email={`test@test.com`} hairColor={HairColor.Pink}/>
   </div>;
 }
 
